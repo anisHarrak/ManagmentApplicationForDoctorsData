@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf12941517383220" configfile="/MEDCNAM/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="add" x="122" y="178" id="pf12941543235711" referenceLink="//@navigationRule.0/@fromViewId|" outlinks="pf12941543235722" path="/add.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="list" x="338" y="178" id="pf12941543235723" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" inlinks="pf12941543235722" path="/list.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="authentifier" x="122" y="562" id="pf12941543235724" referenceLink="//@navigationRule.4/@navigationCase.0/@toViewId|" outlinks="pf12941543235725 pf12941543235726" inlinks="pf12941543235726" path="/authentifier.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="exemple" x="338" y="562" id="pf12941543235727" referenceLink="//@navigationRule.1/@navigationCase.0/@toViewId|" inlinks="pf12941543235725" path="/exemple.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="editfacture" x="338" y="946" id="pf12941543235738" referenceLink="//@navigationRule.3/@navigationCase.0/@toViewId|" outlinks="pf12941543235739" inlinks="pf129415432357310" path="/editfacture.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="listingfacture" x="122" y="946" id="pf129415432357311" referenceLink="//@navigationRule.3/@fromViewId|" outlinks="pf129415432357310" inlinks="pf12941543235739" path="/listingfacture.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="listingassure" x="338" y="1330" id="pf129415432357312" referenceLink="//@navigationRule.6/@navigationCase.0/@toViewId|" outlinks="pf129415432357313" inlinks="pf129415432357314" path="/listingassure.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="editassure" x="122" y="1330" id="pf129415432357315" referenceLink="//@navigationRule.6/@fromViewId|" outlinks="pf129415432357314" inlinks="pf129415432357313" path="/editassure.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="listingacte_facture" x="122" y="1714" id="pf129415432357416" referenceLink="//@navigationRule.7/@fromViewId|" outlinks="pf129415432357417" path="/listingacte_facture.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="editactefacture" x="338" y="1714" id="pf129415432357418" referenceLink="//@navigationRule.7/@navigationCase.0/@toViewId|" inlinks="pf129415432357417" path="/editactefacture.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="add_dÃ©compte" x="122" y="2098" id="pf129415432357419" referenceLink="//@navigationRule.8/@fromViewId|" outlinks="pf129415432357420" path="/add_dÃ©compte.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="add_facture" x="338" y="2098" id="pf129415432357421" referenceLink="//@navigationRule.8/@navigationCase.0/@toViewId|" inlinks="pf129415432357420" path="/add_facture.jsp"/>
+  <links id="pf12941543235722" target="pf12941543235723" source="pf12941543235711" outcome="list"/>
+  <links id="pf12941543235725" target="pf12941543235727" source="pf12941543235724" outcome="ok"/>
+  <links id="pf12941543235739" target="pf129415432357311" source="pf12941543235738"/>
+  <links id="pf129415432357310" target="pf12941543235738" source="pf129415432357311"/>
+  <links id="pf129415432357313" target="pf129415432357315" source="pf129415432357312" outcome="edit" redirect="true"/>
+  <links id="pf129415432357314" target="pf129415432357312" source="pf129415432357315" outcome="list" redirect="true"/>
+  <links id="pf129415432357417" target="pf129415432357418" source="pf129415432357416"/>
+  <links id="pf129415432357420" target="pf129415432357421" source="pf129415432357419"/>
+  <links id="pf12941543235726" target="pf12941543235724" source="pf12941543235724" outcome="nonok">
+    <bendPoints d1Height="-36" d2Height="-36"/>
+    <bendPoints d1Width="-64" d1Height="-36" d2Width="-64" d2Height="-36"/>
+    <bendPoints d1Width="-64" d2Width="-64"/>
+  </links>
+</pageflow:Pageflow>

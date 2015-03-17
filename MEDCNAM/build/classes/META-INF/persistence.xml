@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="1.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">
+	<persistence-unit name="MEDCNAM" transaction-type="RESOURCE_LOCAL">
+	<class>persistence.Medecin</class>
+		<class>persistence.Bureau_reg</class>
+		<class>persistence.Assure</class>
+		<class>persistence.Beneficier</class>
+		<class>persistence.Decompte</class>
+		<class>persistence.Facture</class>
+		<class>persistence.APCI</class>
+		<class>persistence.Acte</class>
+		<class>persistence.Acte_facture</class>
+   <class>persistence.Administrateur</class>
+	   
+	   	<class>
+ 	   				persistence.Adresse</class>
+	   <class>
+			persistence.Person</class>
+	
+	<properties>
+			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQLInnoDBDialect" />
+			<property name="hibernate.hbm2ddl.auto" value="update" />
+     </properties>
+	</persistence-unit>
+</persistence>
